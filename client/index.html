@@ -36,11 +36,7 @@
 
 	<div class="navbar">
 		<a href="#landing">Home</a>
-		<a href="#self-assessment">Self-Assessment</a>
-		<a href="#code-review">Code Review</a>
-		<a href="#enhancement_1">Enhancement 1</a>
-		<a href="#enhancement_2">Enhancement 2</a>
-		<a href="#enhancement_3">Enhancement 3</a>
+		<a href="#overview">Overview</a>
 	</div>
 
 	<section id="landing">
@@ -60,7 +56,7 @@
 		</div>
 	</section>
 
-	<section id="self-assessment">
+	<section id="overview">
 		<div class="card">
 			<div class="spacer"></div>
 			<h2>Professional Self-Assessment</h2>
@@ -106,142 +102,6 @@
 				language from JavaScript to Go and transitioned the database from MongoDB to Postgres. I also implemented a
 				Quicksort algorithm which sorts the user's Todo items by their sequential IDs to ensure that they are in order
 				when being sent to the front end.
-			</p>
-		</div>
-	</section>
-
-	<section id="code-review">
-		<div class="card">
-			<h2>Inital Code Review</h2>
-			<video width="640" height="360" controls>
-				<source src="assets/code_review.mp4" type="video/mp4">
-			</video>
-		</div>
-	</section>
-
-	<section id="enhancement_1">
-		<div class="card">
-			<h2>Enhancement 1: Software Design & Engineering</h2>
-			<p>
-				<i>Briefly describe the artifact. What is it? When was it created?</i>
-			<p class="narrative">
-				&nbsp;&nbsp;&nbsp;&nbsp;This artifact is the server for a personal project called “Todo 2.0”. It is a web
-				application
-				that allows users to add and remove “todo” items from a list, so that they may track their productivity. It runs
-				on the MERN stack currently, meaning it uses JS as the core language, Node as the JS runtime, Express as the
-				HTTP server, MongoDB as the database, and React for the frontend client. It was initially created a little over
-				2 years ago as a personal project so that I could better learn how the MERN stack functioned.
-			</p>
-			<br>
-			<i>Justify the inclusion of the artifact in your ePortfolio.</i>
-			<p class="narrative">
-				&nbsp;&nbsp;&nbsp;&nbsp;I selected this item because it is a simple and straightforward project but includes all
-				three areas of
-				improvement that I must showcase for the capstone. It also presents a great opportunity to show how my skills as
-				a developer have improved over the years, as I now have the ability to transition it to an entirely new language
-				and database technology. The architecture of the server and the transition from Express/JS to Gin/Golang both
-				showcase my software development skills, as it proves that I understand the flow of a server enough to implement
-				it in multiple languages and paradigms. I improved the artifact by performing the aforementioned rewrite in
-				Golang, which allows the server to run faster and be deployed more easily.
-			</p>
-			<br>
-			<i>Reflect on the process of enhancing the artifact.</i>
-			<p class="narrative">
-				&nbsp;&nbsp;&nbsp;&nbsp;I mainly learned how the functionality of a language naturally influences the
-				architecture and logical flow of
-				the software written with it. For example, Express and JS tend to lend themselves to more of a straightforward,
-				simple routing pattern when it comes to writing HTTP server functionality. This is because of the ease and
-				self-documenting nature of Express syntax. However, Gin and Golang present a slightly more complicated syntax,
-				and therefore more documentation must be included, as the code is not self-documenting. One challenge I faced
-				was keeping the data types in-sync between the frontend and backend when transitioning to Go. When they were
-				both written in JS, it was much easier as I could use the same objects, but when they run on different
-				languages, it's slightly harder to ensure that the types are equivalent. To help with this, I transitioned the
-				React frontend from JavaScript to TypeScript.
-			</p>
-			</p>
-		</div>
-
-	</section>
-
-	<section id="enhancement_2">
-		<div class="card">
-			<h2>Enhancement 2: Algorithms & Data Structures</h2>
-			<p>
-				<i>Briefly describe the artifact. What is it? When was it created?</i>
-			<p class="narrative">
-				&nbsp;&nbsp;&nbsp;&nbsp;This artifact is the server for a personal project called “Todo 2.0”. It is a web
-				application
-				that allows users to add and remove “todo” items from a list, so that they may track their productivity. It runs
-				on the MERN stack currently, meaning it uses JS as the core language, Node as the JS runtime, Express as the
-				HTTP server, MongoDB as the database, and React for the frontend client. It was initially created a little over
-				2 years ago as a personal project so that I could better learn how the MERN stack functioned.
-			</p>
-			<br>
-			<i>Justify the inclusion of the artifact in your ePortfolio.</i>
-			<p class="narrative">
-				&nbsp;&nbsp;&nbsp;&nbsp;I selected this item because it presented a great chance to show my skills regarding
-				algorithms and data
-				structures. The main data structure of this program is an object (or struct in Golang) called a 'Todo', which
-				features three fields: an unsigned integer called the “ID”, a string called the “Title”, and a string called the
-				“Content”. The ID is a unique numeric key that is used to identify each Todo, and because of how Postgres works
-				(which will be used to store the Todos in the next milestone), the array of Todos retrieved will not always be
-				in order of these numeric ID's. The end user seeing the Todos on the frontend will want to see these Todos in
-				order, therefore I implemented an algorithm known as “quicksort” to sort the array of Todos in ascending order
-				of ID's before sending it to the frontend. This combination of designing and using the Todo data structure and
-				sorting them with an algorithm showcases my skills in these areas.
-			</p>
-			<br>
-			<i>Reflect on the process of enhancing the artifact.</i>
-			<p class="narrative">
-				&nbsp;&nbsp;&nbsp;&nbsp;I learned that I did not understand the quicksort algorithm as well as I thought I did.
-				I previously implemented
-				a quicksort algorithm in C++ in the data structures and algorithms course, but I had not practiced implementing
-				algorithms since then and therefore I was a little rusty. I had to watch some YouTube videos on how they worked,
-				and it took some trial and error to get it right. I now feel that I have a much greater understanding of these
-				algorithms, as well as recursion.
-			</p>
-			</p>
-		</div>
-	</section>
-
-	<section id="enhancement_3">
-		<div class="card">
-			<h2>Enhancement 3: Databases</h2>
-			<p>
-				<i>Briefly describe the artifact. What is it? When was it created?</i>
-			<p class="narrative">
-				&nbsp;&nbsp;&nbsp;&nbsp;This artifact is the server for a personal project called “Todo 2.0”. It is a web
-				application
-				that allows users to add and remove “todo” items from a list, so that they may track their productivity. It runs
-				on the MERN stack currently, meaning it uses JS as the core language, Node as the JS runtime, Express as the
-				HTTP server, MongoDB as the database, and React for the frontend client. It was initially created a little over
-				2 years ago as a personal project so that I could better learn how the MERN stack functioned.
-			</p>
-			<br>
-			<i>Justify the inclusion of the artifact in your ePortfolio.</i>
-			<p class="narrative">
-				&nbsp;&nbsp;&nbsp;&nbsp;I selected this item because it presented a great chance to show my skills regarding
-				implementing a database
-				into a software project. This program needs a database so that the Todo items can be used across different
-				sessions, as storing them in-memory would mean they would disappear whenever the executable stops running,
-				making updates impossible. At the same time, it only needed two database objects, the Todo and User objects,
-				which means it was fairly straightforward to implement. I implemented communication with a Postgres backend
-				which consisted of a database named 'Todo' and two tables, one named “Users” and one named “Todos”. The API
-				routes interacted with this database through a driver for Golang known as 'pgx' and I used prepared SQL queries
-				to interact with Postgres directly instead of using an ORM.
-			</p>
-			<br>
-			<i>Reflect on the process of enhancing the artifact.</i>
-			<p class="narrative">
-				&nbsp;&nbsp;&nbsp;&nbsp;I learned that, while good practice for SQL, writing prepared statements instead of
-				using an ORM can make the
-				process more difficult, especially when it comes to refactors. Anytime I wanted to add a column to a database
-				table, it required making changes in three separate places: the SQL statements for creating the table, the SQL
-				statements for querying the table, and the Go functions for executing the SQL statements. Although ORM's can
-				slow down performance, in bigger more complicated projects I can see how they may be useful. A good compromise
-				would be using a code-gen solution that allows you to still use SQL but generates the statements for you based
-				on the Golang structs.
-			</p>
 			</p>
 		</div>
 	</section>
