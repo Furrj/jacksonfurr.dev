@@ -138,7 +138,7 @@ section {
 							margin-left: 5px;
 
 							li {
-								text-align: left;
+								text-align: center;
 								text-wrap: wrap;
 							}
 
@@ -147,6 +147,12 @@ section {
 								margin-right: 5px;
 							}
 						}
+					}
+				}
+
+				.right {
+					.spelldle {
+						text-decoration: none;
 					}
 				}
 			}

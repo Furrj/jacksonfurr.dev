@@ -121,12 +121,15 @@ section .card .content.overview .left .bottom ul {
   margin-left: 5px;
 }
 section .card .content.overview .left .bottom ul li {
-  text-align: left;
+  text-align: center;
   text-wrap: wrap;
 }
 section .card .content.overview .left .bottom ul li::before {
   content: "-";
   margin-right: 5px;
+}
+section .card .content.overview .right .spelldle {
+  text-decoration: none;
 }
 
 #landing {
