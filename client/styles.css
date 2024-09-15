@@ -62,7 +62,9 @@ section * {
   z-index: 10;
 }
 section .card {
-  width: 60%;
+  min-width: 60%;
+  width: fit-content;
+  max-width: 80%;
   max-height: 80%;
   background: linear-gradient(to left top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
   border-radius: 1rem;
@@ -130,6 +132,42 @@ section .card .content.overview .left .bottom ul li::before {
 }
 section .card .content.overview .right .spelldle {
   text-decoration: none;
+}
+section .card .content.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section .card .content.contact .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+section .card .content.contact .left div {
+  margin: 5px;
+}
+section .card .content.contact .left div #cell {
+  width: 5rem;
+}
+section .card .content.contact .left div #email {
+  width: 5rem;
+}
+section .card .content.contact .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+}
+section .card .content.contact .right input {
+  text-align: center;
+}
+section .card .content.contact .right textarea {
+  margin-bottom: 5px;
 }
 
 #landing {
