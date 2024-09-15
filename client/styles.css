@@ -117,12 +117,16 @@ section .card .content.overview .left .bottom {
 }
 section .card .content.overview .left .bottom ul {
   list-style-position: inside;
-  list-style-type: square;
+  list-style-type: none;
   margin-left: 5px;
 }
 section .card .content.overview .left .bottom ul li {
   text-align: left;
   text-wrap: wrap;
+}
+section .card .content.overview .left .bottom ul li::before {
+  content: "-";
+  margin-right: 5px;
 }
 
 #landing {

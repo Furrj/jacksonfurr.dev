@@ -134,12 +134,17 @@ section {
 
 						ul {
 							list-style-position: inside;
-							list-style-type: square;
+							list-style-type: none;
 							margin-left: 5px;
 
 							li {
 								text-align: left;
 								text-wrap: wrap;
+							}
+
+							li::before {
+								content: "-";
+								margin-right: 5px;
 							}
 						}
 					}
