@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 	<title>Jackson Furr</title>
 	<link rel="stylesheet" href="./styles.css">
 	<link rel="icon" type="image/svg+xml" href="./assets/favicon.png" />
@@ -65,67 +65,147 @@
 
 	<section id="overview">
 		<div class="card">
-			<h2>Overview</h2>
-			<div class="content overview">
-				<div class="left">
-					<div class="photo">
+			<div class="title">
+				<h2>Overview</h2>
+			</div>
+			<div class="scroll">
+				<div class="content overview">
+					<div class="left">
 						<img src="assets/portfolioAvatar.png" alt="my_headshot">
+						<div class="bottom">
+							<h3>Education:</h3>
+							<ul>
+								<li>Bachelor of Science in Computer Science from Southern New Hampshire University</li>
+								<li>Graduating December 2024</li>
+								<li>4.0 GPA</li>
+							</ul>
+						</div>
 					</div>
-					<div class="bottom">
-						<h3>Education:</h3>
-						<ul>
-							<li>Bachelor of Science in Computer Science from Southern New Hampshire University</li>
-							<li>Graduated August 2024</li>
-							<li>Summa Cum Laude</li>
-							<li>4.0 GPA</li>
-						</ul>
+					<div class="right">
+						<div>
+							Hi! I'm a soon-to-be CS grad and FullStack developer from Atlanta, GA. My passion is back-end
+							development,
+							and I am quite comfortable with both NodeJS and Golang back-ends. I am also familiar with many front-end
+							frameworks and libraries such as React, Svelte, and HTMX. I am currently working on the web application
+							<a href="https://spelldle.app/" target="_blank" class="spelldle">Spelldle</a>, which is a Wordle-like
+							which
+							allows users to test their knowledge of D&D spells. It currently hosts almost 1000 daily active users.
+						</div>
 					</div>
-				</div>
-				<div class="right">
-					Hi! I'm a recent college grad and FullStack developer from Atlanta, GA. My passion is back-end development,
-					and I am quite comfortable with both NodeJS and Golang back-ends. I am also familiar with many front-end
-					frameworks and libraries such as React, Svelte, and HTMX. I am currently working on the web application
-					<a href="https://spelldle.app/" target="_blank" class="spelldle">Spelldle</a>, which is a Wordle-like which
-					allows users to test their knowledge of D&D spells. It currently hosts almost 1000 daily active users.
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section id="projects">
-		<div class="card">
-			<h2>Projects</h2>
-			<div class="content">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ipsum quidem natus eaque. Saepe corporis
-				dolorum repellat vero dicta exercitationem sequi amet qui commodi quasi. Quam corporis in eveniet maxime!
-				In nulla nam deleniti illum aperiam cupiditate itaque ullam amet velit sed iure nihil similique consequuntur
-				debitis est sapiente repellat quis sit dolore, quod accusantium reiciendis? Qui modi incidunt id?
+		<div onclick="changeProject(-1)" class="toggle">
+			<img id="left" src="assets/right-arrow.png" alt="left_arrow">
+		</div>
+		<div class="card" id="spelldle">
+			<div class="title">
+				<h2>Spelldle</h2>
 			</div>
+			<div class="scroll">
+				<div class="content project">
+					<div class="top">
+						<img src="assets/spelldle.png" alt="spelldle_screenshot">
+						<div class="description">
+							Spelldle is a DnD-themed Wordle-like game wherein users
+							guess the category values of an unkown spell, and attempt
+							to guess the spell itself based on the results.
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="left">
+							<div class="top">
+								Front End: React w/ Typescript
+							</div>
+							<div class="bottom">
+								Back End: Go w/ Postgres
+							</div>
+						</div>
+						<div class="right">
+							<div>
+								<a href="https://spelldle.app" target="_blank">Site</a>
+							</div>
+							<div>
+								<a href="https://github.com/Furrj/Spelldle" target="_blank">Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card" id="chatter">
+			<div class="title">
+				<h2>Chatter</h2>
+			</div>
+			<div class="scroll">
+				<div class="content project">
+					<div class="top">
+						<img src="assets/chatter.png" alt="spelldle_screenshot">
+						<div class="description">
+							Chatter is a social media platform that allows users to make posts and interact
+							with the posts of others. It also features different sub-forums tailored to
+							different interests.
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="left">
+							<div class="top">
+								Front End: React w/ Typescript
+							</div>
+							<div class="bottom">
+								Back End: NodeJS w/ MongoDB
+							</div>
+						</div>
+						<div class="right">
+							<div>
+								<a href="https://chatter.jacksonfurr.dev" target="_blank">Site</a>
+							</div>
+							<div>
+								<a href="https://github.com/Furrj/ChatterAPI" target="_blank">Back End Github</a>
+							</div>
+							<div>
+								<a href="https://github.com/Furrj/ChatterClient" target="_blank">Front End Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div onclick="changeProject(1)" class="toggle">
+			<img id="right" src="assets/right-arrow.png" alt="right_arrow">
 		</div>
 	</section>
 
 	<section id="contact">
 		<div class="card">
-			<h2>Contact</h2>
-			<div class="content contact">
-				<div class="left">
-					<div>
-						<img id="cell" src="assets/cellphone.png" alt="cellphone_icon" />
-						<h4>678-852-1980</h4>
+			<div class="title">
+				<h2>Contact</h2>
+			</div>
+			<div class="scroll">
+				<div class="content contact">
+					<div class="left">
+						<div>
+							<img id="cell" src="assets/cellphone.png" alt="cellphone_icon" />
+							<h4>678-852-1980</h4>
+						</div>
+						<div>
+							<img id="email" src="assets/email.png" alt="email_icon" />
+							<h4>jacksonfurrdev@gmail.com</h4>
+						</div>
 					</div>
-					<div>
-						<img id="email" src="assets/email.png" alt="email_icon" />
-						<h4>jacksonfurrdev@gmail.com</h4>
+					<div class="right">
+						<h3>Contact Info</h3>
+						<input type="email" name="email" autocomplete="email" />
+						<h3>Message</h3>
+						<textarea name="message" cols="30" rows="9"></textarea>
+						<button>
+							Send
+						</button>
 					</div>
-				</div>
-				<div class="right">
-					<h3>Email</h3>
-					<input type="email" name="email" />
-					<h3>Message</h3>
-					<textarea name="message" cols="30" rows="9"></textarea>
-					<button>
-						Send
-					</button>
 				</div>
 			</div>
 		</div>
