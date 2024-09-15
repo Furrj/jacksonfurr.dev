@@ -72,7 +72,7 @@ section .card {
   z-index: 6;
   backdrop-filter: blur(5px);
   text-align: center;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 section .card h2 {
   position: sticky;
@@ -168,6 +168,10 @@ section .card .content.contact .right input {
 }
 section .card .content.contact .right textarea {
   margin-bottom: 5px;
+}
+section .card .content.chatter {
+  width: 100%;
+  height: 100%;
 }
 
 #landing {
