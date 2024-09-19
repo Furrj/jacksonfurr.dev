@@ -190,33 +190,39 @@ section {
 
 			&.spelldle {
 				display: grid;
-				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(2, 1fr);
 
-				.left {
-					display: grid;
-					grid-template-rows: repeat(2, 1fr);
-					border-right: $border;
-					height: 100%;
+				.top {
+					display: flex;
 
-					.top {
-						border-bottom: $border;
+					border-bottom: $border;
 
-						img {
-							max-width: 350px;
-							height: 100%;
-							object-fit: scale-down;
-						}
+					img {
+						width: 400px;
+					}
+
+					.description {
+						@include flex-center-col;
+						padding: 5px;
 					}
 				}
 
-				.right {
+				.bottom {
 					display: grid;
-					grid-template-rows: repeat(2, 1fr);
-					border-right: $border;
-					height: 100%;
+					grid-template-columns: repeat(2, 1fr);
 
-					.top {
-						border-bottom: $border;
+					.left {
+						display: grid;
+						grid-template-rows: repeat(2, 1fr);
+						border-right: $border;
+
+						div {
+							@include flex-center-col;
+						}
+					}
+
+					.right {
+						@include flex-center-col;
 					}
 				}
 			}
