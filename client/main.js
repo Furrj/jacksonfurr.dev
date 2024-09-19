@@ -1,12 +1,12 @@
 const spelldle = document.getElementById("spelldle")
-const taskr = document.getElementById("taskr")
+const chatter = document.getElementById("chatter")
 
-const projects = [spelldle, taskr]
+const projects = [spelldle, chatter]
 let count = 0;
 
 function changeProject(movement) {
 	count += movement;
-	const curr = count % projects.length;
+	const curr = Math.abs(count % projects.length);
 	projects.forEach((p, i) => {
 		p.style.display = curr === i % projects.length ? "block" : "none";
 	})
