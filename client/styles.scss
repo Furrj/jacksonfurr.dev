@@ -234,6 +234,32 @@ section {
 	}
 }
 
+section#projects {
+	display: flex;
+	flex-direction: row;
+
+	gap: 10px;
+
+	.toggle {
+		@include flex-center-col;
+		border: $border;
+		border-radius: 10px;
+		background: $card-bg;
+		padding: 5px;
+		cursor: pointer;
+
+		#left {
+			width: 40px;
+			transform: rotate(180deg) translateX(3px);
+		}
+
+		#right {
+			width: 40px;
+			transform: translateX(3px);
+		}
+	}
+}
+
 #landing {
 	animation: bounce 3s ease-in-out 0s infinite;
 

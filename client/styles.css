@@ -212,6 +212,31 @@ section .card#taskr {
   display: none;
 }
 
+section#projects {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+section#projects .toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  cursor: pointer;
+}
+section#projects .toggle #left {
+  width: 40px;
+  transform: rotate(180deg) translateX(3px);
+}
+section#projects .toggle #right {
+  width: 40px;
+  transform: translateX(3px);
+}
+
 #landing {
   animation: bounce 3s ease-in-out 0s infinite;
 }

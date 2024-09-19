@@ -96,7 +96,9 @@
 	</section>
 
 	<section id="projects">
-		<button id="switch" onclick="changeProject()">Switch</button>
+		<div onclick="changeProject(-1)" class="toggle">
+			<img id="left" src="assets/right-arrow.png" alt="left_arrow">
+		</div>
 		<div class="card" id="spelldle">
 			<h2>Spelldle</h2>
 			<div class="content spelldle">
@@ -159,6 +161,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div onclick="changeProject(1)" class="toggle">
+			<img id="right" src="assets/right-arrow.png" alt="right_arrow">
 		</div>
 	</section>
 
