@@ -93,12 +93,12 @@ section .card .content.overview {
 }
 section .card .content.overview .left {
   border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-section .card .content.overview .left .photo {
-  width: 100%;
-  height: 200px;
-}
-section .card .content.overview .left .photo img {
+section .card .content.overview .left img {
   width: 100px;
   height: 100px;
   margin: 5px;
@@ -108,6 +108,7 @@ section .card .content.overview .left .bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5px;
 }
 section .card .content.overview .left .bottom ul {
   list-style-position: inside;
@@ -127,6 +128,7 @@ section .card .content.overview .right {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 section .card .content.overview .right .spelldle {
   text-decoration: none;
@@ -266,8 +268,10 @@ section .card .content.spelldle .right .top {
   }
   #overview .card .content .left {
     border-right: none;
-    display: grid;
-    grid-template-rows: 1fr, 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   #overview .card .content .left .photo {
     width: 100%;
@@ -287,7 +291,6 @@ section .card .content.spelldle .right .top {
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
     padding: 5px;
   }
   #overview .card .content .left .bottom ul {
@@ -319,6 +322,10 @@ section .card .content.spelldle .right .top {
   }
   #contact .card .left {
     border-right: none;
+  }
+  #contact h4 {
+    font-weight: bolder;
+    font-size: larger;
   }
 }
 
