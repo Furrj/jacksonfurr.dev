@@ -227,6 +227,10 @@ section {
 				}
 			}
 		}
+
+		&#taskr {
+			display: none;
+		}
 	}
 }
 
@@ -386,7 +390,7 @@ section {
 	}
 
 	#projects {
-		.content.spelldle {
+		.content {
 			display: flex;
 			flex-direction: column;
 			.top {

@@ -208,6 +208,9 @@ section .card .content.spelldle .bottom .right {
   align-items: center;
   justify-content: center;
 }
+section .card#taskr {
+  display: none;
+}
 
 #landing {
   animation: bounce 3s ease-in-out 0s infinite;
@@ -339,36 +342,36 @@ section .card .content.spelldle .bottom .right {
     font-weight: bolder;
     font-size: larger;
   }
-  #projects .content.spelldle {
+  #projects .content {
     display: flex;
     flex-direction: column;
   }
-  #projects .content.spelldle .top {
+  #projects .content .top {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #projects .content.spelldle .top img {
+  #projects .content .top img {
     width: 250px;
   }
-  #projects .content.spelldle .bottom {
+  #projects .content .bottom {
     display: flex;
     flex-direction: column;
     grid-template-rows: repeat(2, 1fr);
   }
-  #projects .content.spelldle .bottom .left {
+  #projects .content .bottom .left {
     border-right: none;
   }
-  #projects .content.spelldle .bottom .left div {
+  #projects .content .bottom .left div {
     padding: 5px;
   }
-  #projects .content.spelldle .bottom .left .bottom {
+  #projects .content .bottom .left .bottom {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
-  #projects .content.spelldle .bottom .right {
+  #projects .content .bottom .right {
     padding: 5px;
   }
-  #projects .content.spelldle .bottom .right div {
+  #projects .content .bottom .right div {
     display: flex;
     flex-direction: column;
   }
