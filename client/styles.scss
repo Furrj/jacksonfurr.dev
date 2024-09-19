@@ -96,7 +96,7 @@ section {
 			border-bottom-left-radius: 1rem;
 			border-bottom-right-radius: 1rem;
 
-			overflow: auto;
+			overflow: scroll;
 
 			&.overview {
 				display: grid;
@@ -301,7 +301,8 @@ section {
 			display: flex;
 			flex-direction: column;
 			.content {
-				display: block;
+				display: flex;
+				flex-direction: column;
 				.left {
 					border-right: none;
 					display: grid;
@@ -356,6 +357,21 @@ section {
 						text-decoration: none;
 					}
 				}
+			}
+		}
+	}
+
+	#contact {
+		.card {
+			display: flex;
+			flex-direction: column;
+			.content {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.left {
+				border-bottom: $border;
 			}
 		}
 	}

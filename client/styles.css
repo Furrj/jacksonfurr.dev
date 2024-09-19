@@ -85,7 +85,7 @@ section .card .content {
   height: fit-content;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  overflow: auto;
+  overflow: scroll;
 }
 section .card .content.overview {
   display: grid;
@@ -261,7 +261,8 @@ section .card .content.spelldle .right .top {
     flex-direction: column;
   }
   #overview .card .content {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #overview .card .content .left {
     border-right: none;
@@ -307,6 +308,17 @@ section .card .content.spelldle .right .top {
   }
   #overview .card .content .right .spelldle {
     text-decoration: none;
+  }
+  #contact .card {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .card .content {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .card .left {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 }
 
