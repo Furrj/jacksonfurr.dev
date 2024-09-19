@@ -339,6 +339,39 @@ section .card .content.spelldle .bottom .right {
     font-weight: bolder;
     font-size: larger;
   }
+  #projects .content.spelldle {
+    display: flex;
+    flex-direction: column;
+  }
+  #projects .content.spelldle .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #projects .content.spelldle .top img {
+    width: 250px;
+  }
+  #projects .content.spelldle .bottom {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #projects .content.spelldle .bottom .left {
+    border-right: none;
+  }
+  #projects .content.spelldle .bottom .left div {
+    padding: 5px;
+  }
+  #projects .content.spelldle .bottom .left .bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  #projects .content.spelldle .bottom .right {
+    padding: 5px;
+  }
+  #projects .content.spelldle .bottom .right div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

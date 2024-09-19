@@ -384,4 +384,46 @@ section {
 			font-size: larger;
 		}
 	}
+
+	#projects {
+		.content.spelldle {
+			display: flex;
+			flex-direction: column;
+			.top {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				img {
+					width: 250px;
+				}
+			}
+
+			.bottom {
+				display: flex;
+				flex-direction: column;
+
+				grid-template-rows: repeat(2, 1fr);
+
+				.left {
+					border-right: none;
+					div {
+						padding: 5px;
+					}
+					.bottom {
+						border-bottom: $border;
+					}
+				}
+
+				.right {
+					padding: 5px;
+
+					div {
+						display: flex;
+						flex-direction: column;
+					}
+				}
+			}
+		}
+	}
 }
