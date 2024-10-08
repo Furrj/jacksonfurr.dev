@@ -73,7 +73,7 @@ section {
 		min-width: 60%;
 		width: fit-content;
 		max-width: 80%;
-		height: 50%;
+		max-height: 60%;
 		background: linear-gradient(to left top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
 		border: $border;
 		border-radius: 1rem;
@@ -84,7 +84,6 @@ section {
 
 		display: flex;
 		flex-direction: column;
-
 		h2 {
 			background: $card-bg;
 			border-top-left-radius: 1rem;
@@ -98,6 +97,7 @@ section {
 			overflow: auto;
 			.content {
 				width: 100%;
+				height: 100%;
 
 				border-bottom-left-radius: 1rem;
 				border-bottom-right-radius: 1rem;
@@ -406,6 +406,7 @@ section#projects {
 
 	#contact {
 		.card {
+			max-height: 80%;
 			display: flex;
 			flex-direction: column;
 			.content {
@@ -426,46 +427,42 @@ section#projects {
 
 	#projects {
 		.card {
-			height: 50%;
-			display: flex;
-			flex-direction: column;
-
-			.content {
-				display: flex;
-				flex-direction: column;
-
-				.top {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-
-					img {
-						width: 100%;
-					}
-				}
-
-				.bottom {
+			max-height: 70%;
+			overflow: auto;
+			.scroll {
+				height: 100%;
+				border: 1px solid white;
+				.content {
 					display: flex;
 					flex-direction: column;
 
-					grid-template-rows: repeat(2, 1fr);
+					.top {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
 
-					.left {
-						border-right: none;
-						div {
-							padding: 5px;
-						}
-						.bottom {
-							border-bottom: $border;
+						img {
+							width: 100%;
 						}
 					}
 
-					.right {
-						padding: 5px;
+					.bottom {
+						display: flex;
+						flex-direction: column;
 
-						div {
-							display: flex;
-							flex-direction: column;
+						grid-template-rows: repeat(2, 1fr);
+
+						.left {
+							border-right: none;
+							.bottom {
+								border-bottom: $border;
+							}
+						}
+
+						.right {
+							div {
+								text-align: center;
+							}
 						}
 					}
 				}

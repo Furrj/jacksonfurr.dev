@@ -65,7 +65,7 @@ section .card {
   min-width: 60%;
   width: fit-content;
   max-width: 80%;
-  height: 50%;
+  max-height: 60%;
   background: linear-gradient(to left top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 1rem;
@@ -88,6 +88,7 @@ section .card .scroll {
 }
 section .card .scroll .content {
   width: 100%;
+  height: 100%;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
@@ -364,6 +365,7 @@ section#projects .toggle #right {
     text-decoration: none;
   }
   #contact .card {
+    max-height: 80%;
     display: flex;
     flex-direction: column;
   }
@@ -379,42 +381,38 @@ section#projects .toggle #right {
     font-size: larger;
   }
   #projects .card {
-    height: 50%;
+    max-height: 70%;
+    overflow: auto;
+  }
+  #projects .card .scroll {
+    height: 100%;
+    border: 1px solid white;
+  }
+  #projects .card .scroll .content {
     display: flex;
     flex-direction: column;
   }
-  #projects .card .content {
-    display: flex;
-    flex-direction: column;
-  }
-  #projects .card .content .top {
+  #projects .card .scroll .content .top {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #projects .card .content .top img {
+  #projects .card .scroll .content .top img {
     width: 100%;
   }
-  #projects .card .content .bottom {
+  #projects .card .scroll .content .bottom {
     display: flex;
     flex-direction: column;
     grid-template-rows: repeat(2, 1fr);
   }
-  #projects .card .content .bottom .left {
+  #projects .card .scroll .content .bottom .left {
     border-right: none;
   }
-  #projects .card .content .bottom .left div {
-    padding: 5px;
-  }
-  #projects .card .content .bottom .left .bottom {
+  #projects .card .scroll .content .bottom .left .bottom {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
-  #projects .card .content .bottom .right {
-    padding: 5px;
-  }
-  #projects .card .content .bottom .right div {
-    display: flex;
-    flex-direction: column;
+  #projects .card .scroll .content .bottom .right div {
+    text-align: center;
   }
 }
 
