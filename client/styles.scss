@@ -84,6 +84,8 @@ section {
 
 		display: flex;
 		flex-direction: column;
+
+		overflow: auto;
 		h2 {
 			background: $card-bg;
 			border-top-left-radius: 1rem;
@@ -228,6 +230,7 @@ section {
 
 						.right {
 							@include flex-center-col;
+							gap: 10px;
 							div {
 								@include flex-center-col;
 							}
